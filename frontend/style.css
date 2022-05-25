@@ -1,6 +1,7 @@
 body {
   display: block;
   position: relative;
+  background-color: #f7e4d4;
 }
 
 body h1 {
@@ -8,6 +9,7 @@ body h1 {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  top: 100px;
   left: 50%;
   font-family: 'EB Garamond', serif;
   font-weight: normal;
@@ -22,21 +24,111 @@ body h1 {
   }
 }
 
+body input::-webkit-input-placeholder {
+  color: #467745;
+}
+
+body input:-ms-input-placeholder {
+  color: #467745;
+}
+
+body input::-ms-input-placeholder {
+  color: #467745;
+}
+
+body input::placeholder {
+  color: #467745;
+}
+
+body input[type=text] {
+  padding: 10px;
+}
+
 body input {
   position: absolute;
-  top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 250px;
   left: 50%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   max-width: 480px;
   height: 64px;
+  background-color: white;
 }
 
 @media (max-width: 520px) {
   body input {
     width: 100%;
-    height: 40px;
+    left: 20px;
+    top: 20px;
+  }
+}
+
+body textarea::-webkit-input-placeholder {
+  color: #467745;
+}
+
+body textarea:-ms-input-placeholder {
+  color: #467745;
+}
+
+body textarea::-ms-input-placeholder {
+  color: #467745;
+}
+
+body textarea::placeholder {
+  color: #467745;
+}
+
+body textarea[name=textarea] {
+  padding: 20px;
+}
+
+body textarea {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 350px;
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 480px;
+  height: 120px;
+  background-color: white;
+}
+
+@media (max-width: 520px) {
+  body textarea {
+    width: 100%;
+  }
+}
+
+body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+}
+
+body div label {
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #467745;
+}
+
+@media (max-width: 520px) {
+  body div label {
+    left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
